@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B784D3E327C479360065215E /* IMDB_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784D3E227C479360065215E /* IMDB_SwiftUIApp.swift */; };
-		B784D3E527C479360065215E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784D3E427C479360065215E /* ContentView.swift */; };
+		B74F4F1527C5FDEB00817A77 /* IMDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4F1427C5FDEB00817A77 /* IMDBApp.swift */; };
+		B74F4F1727C6199A00817A77 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4F1627C6199A00817A77 /* MovieDetailView.swift */; };
+		B74F4F1927C619C600817A77 /* IMDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4F1827C619C600817A77 /* IMDBAPI.swift */; };
+		B784D3E327C479360065215E /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784D3E227C479360065215E /* MoviesListView.swift */; };
 		B784D3E727C4793C0065215E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B784D3E627C4793C0065215E /* Assets.xcassets */; };
 		B784D3EA27C4793C0065215E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B784D3E927C4793C0065215E /* Preview Assets.xcassets */; };
 		B784D3F427C4793C0065215E /* IMDB_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784D3F327C4793C0065215E /* IMDB_SwiftUITests.swift */; };
@@ -34,9 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B74F4F1427C5FDEB00817A77 /* IMDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDBApp.swift; sourceTree = "<group>"; };
+		B74F4F1627C6199A00817A77 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		B74F4F1827C619C600817A77 /* IMDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDBAPI.swift; sourceTree = "<group>"; };
+		B74F4F1A27C675A400817A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B784D3DF27C479360065215E /* IMDB-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMDB-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B784D3E227C479360065215E /* IMDB_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDB_SwiftUIApp.swift; sourceTree = "<group>"; };
-		B784D3E427C479360065215E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B784D3E227C479360065215E /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
 		B784D3E627C4793C0065215E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B784D3E927C4793C0065215E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B784D3EF27C4793C0065215E /* IMDB-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IMDB-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +99,11 @@
 		B784D3E127C479360065215E /* IMDB-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B784D3E227C479360065215E /* IMDB_SwiftUIApp.swift */,
-				B784D3E427C479360065215E /* ContentView.swift */,
+				B74F4F1A27C675A400817A77 /* Info.plist */,
+				B74F4F1427C5FDEB00817A77 /* IMDBApp.swift */,
+				B784D3E227C479360065215E /* MoviesListView.swift */,
+				B74F4F1627C6199A00817A77 /* MovieDetailView.swift */,
+				B74F4F1827C619C600817A77 /* IMDBAPI.swift */,
 				B784D3E627C4793C0065215E /* Assets.xcassets */,
 				B784D3E827C4793C0065215E /* Preview Content */,
 			);
@@ -257,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B784D3E527C479360065215E /* ContentView.swift in Sources */,
-				B784D3E327C479360065215E /* IMDB_SwiftUIApp.swift in Sources */,
+				B74F4F1527C5FDEB00817A77 /* IMDBApp.swift in Sources */,
+				B74F4F1927C619C600817A77 /* IMDBAPI.swift in Sources */,
+				B74F4F1727C6199A00817A77 /* MovieDetailView.swift in Sources */,
+				B784D3E327C479360065215E /* MoviesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +431,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IMDB-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IMDB-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +460,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"IMDB-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IMDB-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
